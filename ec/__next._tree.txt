@@ -1,0 +1,2 @@
+:HL["/hop_ve/_next/static/chunks/83891dbaa3c7977d.css","style"]
+0:{"buildId":"c0PMBrqIQ8EhTT6yF9y94","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"country","paramType":"d","paramKey":"ec","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
