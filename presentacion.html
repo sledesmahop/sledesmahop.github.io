@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Análisis Macroeconómico y Modelo de Informes</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #dcdcdc;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    page-break-after: always;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 25px;
+}
+
+.content {
+    overflow: auto;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 30px 0 15px 0;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 25px 0 10px 0;
+}
+
+p, li {
+    font-size: 19px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-height: 220px;
+    max-width: 60%;
+    opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Slide 1 -->
+<section class="slide">
+    <div>
+        <h1>Sobre el modelo</h1>
+    </div>
+
+    <div class="content">
+        <p>
+            La primera versión consistía en un puntaje obtenido mediante el Análisis de Discriminante Lineal de un conjunto de países.
+            Esto consistía en que, dado un listado de países que se consideran riesgosos y otros que se consideran seguros,
+            definir cuánto un país se acerca a la categoría de riesgoso o cuánto se acerca a la de seguro.
+        </p>
+
+        <p>
+            Es un modelo que, por un lado, ofrece mucha automatización, pues es simplemente hacer un click y ahí se obtiene
+            el listado de los países. Pero por otro lado, es un modelo eminentemente numérico, es decir, no interpreta los datos
+            (el mismo proceso se usa si son países riesgosos o si son categorías de plantas), ni ofrece mucha más personalización.
+        </p>
+    </div>
+
+</section>
+
+<!-- Slide 2 -->
+<section class="slide">
+    <div>
+        <h2>Personalización del Modelo</h2>
+    </div>
+
+    <div class="content">
+        <h3>¿Qué trabajo había que hacer ahora?</h3>
+        <p>
+            Según lo que planteó Iván en la review donde pasé status, el trabajo era personalizar el modelo o bajarlo más a la compañía.
+        </p>
+
+        <h3>¿Cómo abordé dicho trabajo?</h3>
+        <p>
+            Para hacer eso, decidí ir un paso atrás y hacer un análisis macroeconómico propiamente dicho.
+            Lo que antes estaba haciendo era un análisis numérico y estadístico, con métodos genéricos que se pueden aplicar
+            tanto a un análisis de un país como a otros problemas.
+        </p>
+
+        <p>
+            Ahora, en cambio, me propuse hacer un análisis específicamente macroeconómico con los datos públicos
+            de la API del Banco Mundial.
+        </p>
+    </div>
+
+
+</section>
+
+<!-- Slide 3 -->
+<section class="slide">
+    <div>
+        <h2>Objetivo del Análisis</h2>
+    </div>
+
+    <div class="content">
+        <p>
+            Considero que primero hay que definir el objetivo del análisis. Nosotros debemos hacer un análisis macroeconómico
+            con el fin de ver si desembarcar en un país o no.
+        </p>
+
+        <p>
+            Yo pienso que un análisis de este tipo debe tener como objetivo poder entender la capacidad de generar riqueza,
+            o prosperidad, de un país. Es decir, buscamos entender el “valor intrínseco” de un país,
+            no su valor en comparativa con otros.
+        </p>
+    </div>
+
+</section>
+
+<!-- Slide 4 -->
+<section class="slide">
+    <div>
+        <h2>Valuación de un País</h2>
+    </div>
+
+    <div class="content">
+        <p>
+            No existe una única forma de valuar la capacidad de prosperidad de un país o economía.
+        </p>
+
+        <ul>
+            <li>Modelos DSGE con microfundamentos.</li>
+            <li>Enfoques macroeconómicos agregados.</li>
+            <li>Producción vs indicadores sociales.</li>
+            <li>Escuela Austríaca vs enfoques con proyecciones estructurales.</li>
+        </ul>
+
+        <p>
+            Si se aborda un análisis macroeconómico serio, le corresponde al negocio definir su “cosmovisión”
+            respecto a qué entiende por un buen país para desembarcar.
+        </p>
+    </div>
+
+
+</section>
+
+<!-- Slide 5 -->
+<section class="slide">
+    <div>
+        <h2>Modelo Elegido</h2>
+    </div>
+
+    <div class="content">
+        <p>
+            Para este análisis, elijo el modelo de Ray Dalio de los ciclos económicos.
+            Ofrece criterios para evaluar la capacidad estructural de riqueza y la fase del ciclo económico.
+        </p>
+
+        <p>
+            Es un modelo aplicable con fuentes públicas disponibles.
+        </p>
+
+        <h3>Tendencia Estructural</h3>
+        <p>
+            Índice compuesto por educación, innovación, participación en PBI mundial,
+            moneda de reserva, entre otros factores.
+        </p>
+
+        <h3>Ciclo de Deuda</h3>
+        <p>
+            Identifica expansión o contracción económica.
+        </p>
+
+        <p>
+            Un buen país combina firme Tendencia Estructural con economía en expansión.
+        </p>
+    </div>
+
+
+</section>
+
+<!-- Slide 6 -->
+<section class="slide">
+    <div>
+        <h1>Sobre los Informes</h1>
+    </div>
+
+    <div class="content">
+        <p>
+            Cada informe adoptará una estructura fija compuesta por cuatro partes,
+            siguiendo el estándar de informes de inteligencia profesional.
+        </p>
+
+        <h3>1. Título</h3>
+        <p>Define con precisión el objeto del informe.</p>
+
+        <h3>2. Conclusiones</h3>
+        <p>Se presentan al inicio y responden la pregunta central.</p>
+
+        <h3>3. Análisis</h3>
+        <p>Desarrollo metodológico y razonamiento técnico.</p>
+
+        <h3>4. Anexos</h3>
+        <p>Material complementario: tablas, gráficos, modelos y fuentes.</p>
+
+        <p>
+            Esta estructura separa decisión, razonamiento y evidencia técnica,
+            logrando informes profesionales y académicamente sólidos.
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>
