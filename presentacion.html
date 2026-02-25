@@ -2,234 +2,273 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Análisis Macroeconómico y Modelo de Informes</title>
+<title>Modelo Macroeconómico - Enfoque Dalio</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: "Georgia", "Times New Roman", serif;
-    background: #dcdcdc;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.slide {
-    width: 100vw;
-    height: 100vh;
-    background: white;
-    padding: 70px 100px;
-    box-sizing: border-box;
-    page-break-after: always;
-
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    gap: 25px;
+body{
+    background:#111;
 }
 
-.content {
-    overflow: auto;
+.slide{
+    width:100vw;
+    height:100vh;
+    padding:70px 90px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:white;
+    page-break-after:always;
+    overflow:hidden;
 }
 
-h1 {
-    font-size: 42px;
-    margin: 0 0 20px 0;
+h1{
+    font-size:44px;
+    margin-bottom:35px;
 }
 
-h2 {
-    font-size: 30px;
-    margin: 30px 0 15px 0;
+h2{
+    font-size:30px;
+    margin-bottom:25px;
 }
 
-h3 {
-    font-size: 24px;
-    margin: 25px 0 10px 0;
+h3{
+    font-size:24px;
+    margin-bottom:20px;
 }
 
-p, li {
-    font-size: 19px;
-    line-height: 1.6;
-    text-align: justify;
+p, li{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:14px;
 }
 
-ul {
-    margin-top: 10px;
+ul{
+    margin-left:25px;
 }
 
-.image-container {
-    text-align: center;
+.cover{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
 }
 
-.image-container img {
-    max-height: 220px;
-    max-width: 60%;
-    opacity: 0.85;
+.visual{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+}
+
+svg{
+    max-height:35vh;
 }
 </style>
 </head>
-
 <body>
 
-<!-- Slide 1 -->
-<section class="slide">
-    <div>
-        <h1>Sobre el modelo</h1>
-    </div>
-
-    <div class="content">
-        <p>
-            La primera versión consistía en un puntaje obtenido mediante el Análisis de Discriminante Lineal de un conjunto de países.
-            Esto consistía en que, dado un listado de países que se consideran riesgosos y otros que se consideran seguros,
-            definir cuánto un país se acerca a la categoría de riesgoso o cuánto se acerca a la de seguro.
-        </p>
-
-        <p>
-            Es un modelo que, por un lado, ofrece mucha automatización, pues es simplemente hacer un click y ahí se obtiene
-            el listado de los países. Pero por otro lado, es un modelo eminentemente numérico, es decir, no interpreta los datos
-            (el mismo proceso se usa si son países riesgosos o si son categorías de plantas), ni ofrece mucha más personalización.
-        </p>
-    </div>
-
+<!-- PORTADA -->
+<section class="slide cover">
+<h1>Modelo de Análisis Macroeconómico</h1>
+<p>Integración del Modelo de Ray Dalio y Adaptación Estratégica</p>
 </section>
 
-<!-- Slide 2 -->
+<!-- MODELO ORIGINAL -->
 <section class="slide">
-    <div>
-        <h2>Personalización del Modelo</h2>
-    </div>
+<p>
+La primera versión consistía en un puntaje obtenido mediante el Análisis de Discriminante Lineal de un conjunto de países. 
+Esto consistía en que, dado un listado de países que se consideran riesgosos y otros que se consideran seguros, 
+definir cuánto un país se acerca a la categoría de riesgoso o cuánto se acerca a la de seguro.
+</p>
 
-    <div class="content">
-        <h3>¿Qué trabajo había que hacer ahora?</h3>
-        <p>
-            Según lo que planteó Iván en la review donde pasé status, el trabajo era personalizar el modelo o bajarlo más a la compañía.
-        </p>
+<p>
+Es un modelo que, por un lado, ofrece mucha automatización, pues es simplemente hacer un click y ahí se obtiene 
+el listado de los países. Pero por otro lado, es un modelo eminentemente numérico, es decir, no interpreta los datos 
+(el mismo proceso se usa si son países riesgosos o si son categorías de plantas), ni ofrece mucha más personalización.
+</p>
 
-        <h3>¿Cómo abordé dicho trabajo?</h3>
-        <p>
-            Para hacer eso, decidí ir un paso atrás y hacer un análisis macroeconómico propiamente dicho.
-            Lo que antes estaba haciendo era un análisis numérico y estadístico, con métodos genéricos que se pueden aplicar
-            tanto a un análisis de un país como a otros problemas.
-        </p>
-
-        <p>
-            Ahora, en cambio, me propuse hacer un análisis específicamente macroeconómico con los datos públicos
-            de la API del Banco Mundial.
-        </p>
-    </div>
-
-
+<div class="visual">
+<svg width="500" height="200">
+<circle cx="170" cy="100" r="70" fill="#c1121f"/>
+<circle cx="330" cy="100" r="70" fill="#1d3557"/>
+</svg>
+</div>
 </section>
 
-<!-- Slide 3 -->
+<!-- TRABAJO A REALIZAR -->
 <section class="slide">
-    <div>
-        <h2>Objetivo del Análisis</h2>
-    </div>
+<h2>¿Qué trabajo había que hacer ahora?</h2>
 
-    <div class="content">
-        <p>
-            Considero que primero hay que definir el objetivo del análisis. Nosotros debemos hacer un análisis macroeconómico
-            con el fin de ver si desembarcar en un país o no.
-        </p>
+<p>
+Según lo que planteó Iván en la review donde pasé status, el trabajo era personalizar el modelo o bajarlo más a la compañía.
+</p>
 
-        <p>
-            Yo pienso que un análisis de este tipo debe tener como objetivo poder entender la capacidad de generar riqueza,
-            o prosperidad, de un país. Es decir, buscamos entender el “valor intrínseco” de un país,
-            no su valor en comparativa con otros.
-        </p>
-    </div>
+<h2>¿Cómo abordé dicho trabajo?</h2>
 
+<p>
+Para hacer eso, decidí ir un paso atrás y hacer un análisis macroeconómico propiamente dicho. 
+Lo que antes estaba haciendo era un análisis numérico y estadístico, con métodos genéricos que se pueden aplicar 
+tanto a un análisis de un país como a otros problemas.
+</p>
+
+<p>
+Ahora, en cambio, me propuse hacer un análisis específicamente macroeconómico con los datos públicos 
+de la API del Banco Mundial.
+</p>
+
+<div class="visual">
+<svg width="500" height="200">
+<rect x="150" y="50" width="200" height="100" fill="#457b9d"/>
+</svg>
+</div>
 </section>
 
-<!-- Slide 4 -->
+<!-- OBJETIVO -->
 <section class="slide">
-    <div>
-        <h2>Valuación de un País</h2>
-    </div>
+<h2>¿Qué objetivo persigue el análisis? ¿Qué conclusiones busca obtener?</h2>
 
-    <div class="content">
-        <p>
-            No existe una única forma de valuar la capacidad de prosperidad de un país o economía.
-        </p>
+<p>
+Considero que primero hay que definir el objetivo del análisis. Nosotros debemos hacer un análisis macroeconómico 
+con el fin de ver si desembarcar en un país o no.
+</p>
 
-        <ul>
-            <li>Modelos DSGE con microfundamentos.</li>
-            <li>Enfoques macroeconómicos agregados.</li>
-            <li>Producción vs indicadores sociales.</li>
-            <li>Escuela Austríaca vs enfoques con proyecciones estructurales.</li>
-        </ul>
+<p>
+Yo pienso que un análisis de este tipo debe tener como objetivo poder entender la capacidad de generar riqueza, 
+o prosperidad, de un país. Es decir, buscamos entender el “valor intrínseco” de un país, no su valor en comparativa con otros.
+</p>
 
-        <p>
-            Si se aborda un análisis macroeconómico serio, le corresponde al negocio definir su “cosmovisión”
-            respecto a qué entiende por un buen país para desembarcar.
-        </p>
-    </div>
-
-
+<div class="visual">
+<svg width="500" height="200">
+<polygon points="250,40 460,180 40,180" fill="#2a9d8f"/>
+</svg>
+</div>
 </section>
 
-<!-- Slide 5 -->
+<!-- FILOSOFÍA ECONÓMICA (FUENTE 1 COMPLETA) -->
 <section class="slide">
-    <div>
-        <h2>Modelo Elegido</h2>
-    </div>
+<p>
+Todo análisis macroeconómico parte de una filosofía económica. No existe una única forma “correcta” de evaluar la prosperidad o el valor de un país: cada enfoque selecciona qué variables considera centrales, cómo las pondera y qué interpretación hace de los ciclos económicos. Por ello, antes de analizar datos, es necesario definir el marco conceptual desde el cual se realizará la evaluación.
+</p>
 
-    <div class="content">
-        <p>
-            Para este análisis, elijo el modelo de Ray Dalio de los ciclos económicos.
-            Ofrece criterios para evaluar la capacidad estructural de riqueza y la fase del ciclo económico.
-        </p>
+<p>
+La empresa deberá elegir explícitamente la filosofía económica que considere más adecuada para sus objetivos estratégicos, y construir sus análisis sobre esa base. Existen múltiples corrientes y metodologías posibles. En este modelo se adopta el enfoque desarrollado por Ray Dalio, por su aplicabilidad práctica, su coherencia interna y su utilidad para la evaluación de proyectos de inversión con los datos disponibles.
+</p>
 
-        <p>
-            Es un modelo aplicable con fuentes públicas disponibles.
-        </p>
-
-        <h3>Tendencia Estructural</h3>
-        <p>
-            Índice compuesto por educación, innovación, participación en PBI mundial,
-            moneda de reserva, entre otros factores.
-        </p>
-
-        <h3>Ciclo de Deuda</h3>
-        <p>
-            Identifica expansión o contracción económica.
-        </p>
-
-        <p>
-            Un buen país combina firme Tendencia Estructural con economía en expansión.
-        </p>
-    </div>
-
-
+<div class="visual">
+<svg width="500" height="200">
+<circle cx="250" cy="100" r="80" fill="#1d3557"/>
+</svg>
+</div>
 </section>
 
-<!-- Slide 6 -->
 <section class="slide">
-    <div>
-        <h1>Sobre los Informes</h1>
-    </div>
+<p>
+Según Dalio, la prosperidad de un país puede analizarse en dos grandes dimensiones complementarias:
+</p>
 
-    <div class="content">
-        <p>
-            Cada informe adoptará una estructura fija compuesta por cuatro partes,
-            siguiendo el estándar de informes de inteligencia profesional.
-        </p>
+<p>
+1. Tendencia Estructural (Structural Trend)
+</p>
 
-        <h3>1. Título</h3>
-        <p>Define con precisión el objeto del informe.</p>
+<p>
+Evalúa los factores estructurales que determinan el valor intrínseco de una nación a largo plazo. Incluye variables como el nivel educativo, la competitividad internacional, la innovación y el desarrollo tecnológico, el peso relativo en el PBI mundial, la participación en el comercio global, la fortaleza militar, la capacidad de actuar como centro financiero y la condición de moneda de reserva. Esta dimensión busca capturar la capacidad estructural de generación de riqueza y poder en el tiempo.
+</p>
 
-        <h3>2. Conclusiones</h3>
-        <p>Se presentan al inicio y responden la pregunta central.</p>
+<div class="visual">
+<svg width="500" height="200">
+<rect x="100" y="60" width="300" height="80" fill="#264653"/>
+</svg>
+</div>
+</section>
 
-        <h3>3. Análisis</h3>
-        <p>Desarrollo metodológico y razonamiento técnico.</p>
+<section class="slide">
+<p>
+2. Ciclo de Deuda (Debt Cycle)
+</p>
 
-        <h3>4. Anexos</h3>
-        <p>Material complementario: tablas, gráficos, modelos y fuentes.</p>
+<p>
+Describe los movimientos cíclicos de la economía asociados a la expansión y contracción del crédito. Para Dalio, los ciclos económicos no son fenómenos aleatorios, sino el resultado de dinámicas de endeudamiento que impulsan fases de crecimiento y posterior ajuste. El análisis del ciclo de deuda permite comprender en qué etapa del proceso se encuentra un país y cuáles son los riesgos y oportunidades asociados.
+</p>
 
-        <p>
-            Esta estructura separa decisión, razonamiento y evidencia técnica,
-            logrando informes profesionales y académicamente sólidos.
-        </p>
-    </div>
+<p>
+Este proyecto integra ambas dimensiones —estructura y ciclo— para ofrecer una visión sintética pero rigurosa del posicionamiento macroeconómico de cada país, combinando perspectiva de largo plazo con diagnóstico coyuntural.
+</p>
 
+<div class="visual">
+<svg width="500" height="200">
+<path d="M0 120 Q125 20 250 120 T500 120" stroke="#e63946" stroke-width="4" fill="transparent"/>
+</svg>
+</div>
+</section>
+
+<!-- ESTRUCTURA DE INFORMES COMPLETA -->
+<section class="slide">
+<h2>Estructura Fija de los Informes</h2>
+
+<p>
+Cada informe que elabore, a partir de ahora, adoptará una estructura fija compuesta por cuatro partes. 
+Esta estructura no aplica únicamente a informes macroeconómicos, sino a cualquier tipo de informe 
+que realice en el futuro.
+</p>
+
+<p>
+Se trata de la misma estructura que utilizan los informes de inteligencia profesional, 
+lo que permite claridad conceptual, orden lógico y una mejor toma de decisiones.
+</p>
+
+<div class="visual">
+<svg width="500" height="200">
+<rect x="150" y="30" width="200" height="40" fill="#1d3557"/>
+<rect x="150" y="80" width="200" height="40" fill="#457b9d"/>
+<rect x="150" y="130" width="200" height="40" fill="#a8dadc"/>
+<rect x="150" y="180" width="200" height="40" fill="#e63946"/>
+</svg>
+</div>
+</section>
+
+<section class="slide">
+<h3>1. Título</h3>
+<p>
+El título define con precisión el objeto del informe. Debe ser claro, específico y reflejar exactamente qué problema o cuestión se está analizando. Un buen título permite entender de inmediato el alcance del documento.
+</p>
+
+<h3>2. Conclusiones</h3>
+<p>
+Las conclusiones se presentan al comienzo del informe. Esto es fundamental: quien toma decisiones necesita primero conocer el resultado del análisis.
+</p>
+
+<p>
+En esta sección se responde directamente a la pregunta central del informe. No se trata de explicar el proceso, sino de exponer el juicio final, los hallazgos principales y las implicancias prácticas.
+</p>
+</section>
+
+<section class="slide">
+<h3>3. Análisis</h3>
+<p>
+El análisis constituye el cuerpo del informe. Aquí se desarrolla el razonamiento que sustenta las conclusiones.
+</p>
+
+<p>
+Incluye los datos utilizados, la metodología aplicada, los supuestos adoptados y la interpretación de la información. Es la sección donde se muestra el proceso lógico y técnico que llevó al resultado final.
+</p>
+
+<h3>4. Anexos</h3>
+<p>
+Los anexos contienen el material complementario que respalda el análisis pero que no es necesario incluir en el cuerpo principal del documento.
+</p>
+
+<p>
+Aquí pueden incorporarse tablas de datos, gráficos detallados, modelos matemáticos, fuentes utilizadas, documentación técnica o cualquier otro soporte adicional.
+</p>
+
+<p>
+Esta estructura permite separar con claridad la decisión (Conclusiones), el razonamiento (Análisis) y la evidencia técnica (Anexos), logrando informes más profesionales, ordenados y orientados a la acción.
+</p>
 </section>
 
 </body>
